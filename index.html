@@ -1,76 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>6709620022_LibraryMembershipApplicationForm</title>
+    <link rel="stylesheet" href="my syle.css">
 </head>
 
 <body>
-
     <form>
-        <div>
-            <label>ชื่อ</label>
-            <input type="text">
+        <h2>Library Membership Application Form</h2>
+        <div class="form-section">
+            <label>ชื่อ <span class="required">*</span></label>
+            <input type="text" id="ชื่อ" name="ชื่อ" required>
         </div>
-        <br>
-        <div> <label>นามสกุล</label>
-            <input type="text">
-        </div>
-        <br>
-        <div> <label>First name</label>
 
-            <input type="text">
+        <div class="form-section">
+            <label>นามสกุล <span class="required">*</span></label>
+            <input type="text" id="นามสกุล" name="นามสกุล" required>
         </div>
-        <br>
-        <div>
-            <label>Last name</label>
-            <input type="text">
+
+        <div class="form-section">
+            <label>First name <span class="required">*</span></label>
+            <input type="text" id="FirstName" name="FirstName" required>
         </div>
-        <br>
-        <div>
+
+        <div class="form-section">
+            <label>Last name <span class="required">*</span></label>
+            <input type="text" id="LastName" name="LastName" required>
+        </div>
+
+        <div class="form-section">
             <label>เพศ</label>
-            <input type="text">
+            <select id="เพศ" name="เพศ">
+                <option value="ชาย">ชาย</option>
+                <option value="หญิง">หญิง</option>
+                <option value="อื่นๆ">อื่นๆ</option>
+            </select>
         </div>
-        <br>
-        <div>
-            <label>รหัสนักศึกษา</label>
-            <input type="text">
+
+        <div class="form-section">
+            <label>รหัสนักศึกษา <span class="required">*</span></label>
+            <input type="text" id="รหัสนักศึกษา" name="รหัสนักศึกษา" pattern="\d{8}" title="กรุณาใส่รหัสนักศึกษาจำนวน 8 หลัก" required>
         </div>
-        <br>
-        <div>
-            <label>คณะที่ศึกษา</label>
-            <input type="text">
+
+        <div class="form-section">
+            <label>คณะที่ศึกษา <span class="required">*</span></label>
+            <input type="text" id="คณะที่ศึกษา" name="คณะที่ศึกษา" required>
         </div>
-        <br>
-        <div>
-            <label>ที่อยู่อีเมล (E-mail address)</label>
-            <input type="text">
+
+        <div class="form-section">
+            <label>ที่อยู่อีเมล (E-mail address) <span class="required">*</span></label>
+            <input type="email" id="ที่อยู่อีเมล" name="ที่อยู่อีเมล" required>
         </div>
-        <br>
-        <div>
-            <label>วันเดือนปีเกิด</label>
-            <input type="text">
+
+        <div class="form-section">
+            <label>วันเดือนปีเกิด <span class="required">*</span></label>
+            <input type="date" id="วันเดือนปีเกิด" name="วันเดือนปีเกิด" required>
         </div>
-        <br>
-        <div>
+
+        <div class="form-section">
             <label>ประเภทของหนังสือที่สนใจ</label>
-            <input type="text">
+            <input type="text" id="ประเภทของหนังสือที่สนใจ" name="ประเภทของหนังสือที่สนใจ">
         </div>
-        <br>
-        <div>
-            <label>ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
-            <input type="text">
+
+        <div class="form-section">
+            <label>
+                <input type="checkbox" id="ข่าวสาร" name="ข่าวสาร"> รับข่าวสารข้อมูลทางอีเมล
+            </label>
         </div>
-        <br>
-        <div>
-            <input type="reset">
-        </div>
-        <br>
-        <div>
-            <input type="submit">
+
+        <div class="form-section">
+            <input type="reset" value="รีเซ็ต">
+            <input type="submit" value="ส่งข้อมูล">
         </div>
     </form>
-
 </body>
 
 </html>
